@@ -1,0 +1,32 @@
+Display
+
+<Display>:
+    StackLayout:
+        TextInput:
+            id: imagename
+            size_hint: .5,.0625
+        Button:
+            text: "Load Image"
+            size_hint: .5,.0625
+            on_release: root.loadImage(imagename.text)
+        Button:
+            text: "Greyscale"
+            size_hint: .5,.0625
+        Button:
+            text: "Inverse"
+            size_hint: .5,.0625
+        Button:
+            text: "Line Drawing"
+            size_hint: .5,.0625
+        Button:
+            text: "Pointilism"
+            size_hint: .5,.0625
+        Button:
+            text: "Sepia"
+            size_hint: .5,.0625
+        Button:
+            text: "Pixelate"
+            size_hint: .5,.0625
+        Image:
+            id: image
+            size_hint: 1, .75
