@@ -12,21 +12,27 @@ Display
         Button:
             text: "Greyscale"
             size_hint: .5,.0625
+            on_release: root.greyscale(image.source)
         Button:
             text: "Inverse"
             size_hint: .5,.0625
+            on_release: root.inverse(image.source)
         Button:
             text: "Line Drawing"
             size_hint: .5,.0625
+            on_release: root.line_drawing(image.source)
         Button:
             text: "Pointilism"
             size_hint: .5,.0625
+            on_release: root.pointillism(image.source)
         Button:
             text: "Sepia"
             size_hint: .5,.0625
+            on_release: root.sepia(image.source)
         Button:
             text: "Pixelate"
             size_hint: .5,.0625
+            on_release: root.pixelate(image.source)
         Image:
             id: image
             size_hint: 1, .75
